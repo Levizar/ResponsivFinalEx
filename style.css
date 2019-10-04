@@ -137,21 +137,22 @@ nav a:hover
     bottom: 0;
     border-radius: 0px 0px 5px 5px;
     width: 99.5%;
-    height: 33px;
+    height: auto;
     padding-top: 15px;
     padding-left: 4px;
     background-color: rgba(24,24,24,0.8);
     color: white;
     font-size: 0.8em;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .bouton_rouge
 {
     height: 25px;
-    position: absolute;
+    /* position: absolute;
     right: 5px;
-    bottom: 5px;
+    bottom: 5px; */
     background: url('images/fond_degraderouge.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
@@ -290,3 +291,52 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
+
+
+@media only screen and (max-width: 899px){
+    #bloc_page{
+        width: 90%;
+        margin: auto;
+    }
+    #banniere_image{
+        width: 100%;
+        background-size: cover;
+        background-position: center center;   
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    #bloc_page{
+        width: 100%;
+        margin: 5px;
+    }
+    section{
+        flex-direction: column;
+        }
+    footer{
+        flex-direction: column;
+    }
+    #tweet, #mes_photos, #mes_amis{
+        width: 100%;
+    }
+}
+    
+@media only screen and (max-width: 400px){
+    #banniere_description{
+        flex-direction: column;
+    }
+}
+
+/* @media only screen and (max-width: 300px){
+    #banniere_image{
+        display: none;
+    }
+} */
