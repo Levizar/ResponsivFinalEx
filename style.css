@@ -305,7 +305,7 @@ footer h1
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 599px){
     header{
         flex-direction: column;
         justify-content: flex-start;
@@ -329,7 +329,7 @@ footer h1
     }
 }
     
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 399px){
     #banniere_description{
         flex-direction: column;
     }
